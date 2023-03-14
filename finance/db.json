@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "date": "2023, 3, 1",
+      "category": "food",
+      "title": "Mercado",
+      "value": 832.12
+    },
+    {
+      "id": 2,
+      "date": "2023, 3, 1",
+      "category": "rent",
+      "title": "Alugel",
+      "value": 1000
+    },
+    {
+      "id": 3,
+      "date": "2023, 3, 2",
+      "category": "salary",
+      "title": "Salário",
+      "value": 2832.12
+    },
+    {
+      "id": 4,
+      "date": "2023, 3, 1",
+      "category": "food",
+      "title": "Mc. Donalds",
+      "value": 32.2
+    },
+    {
+      "id": 5,
+      "date": "2023, 4, 1",
+      "category": "salary",
+      "title": "Salário",
+      "value": 2833.12
+    },
+    {
+      "date": "2023-03-12",
+      "select": "2",
+      "title": "agura",
+      "value": 40,
+      "id": 6
+    }
+  ]
+}

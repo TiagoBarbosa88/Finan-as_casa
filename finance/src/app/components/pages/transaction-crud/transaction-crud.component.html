@@ -1,0 +1,26 @@
+<div class="container">
+  <form class="example-form input-group" [formGroup]="form" (ngSubmit)="createTransaction()">
+    <mat-form-field appearance="outline" class="m-1">
+      <mat-label>Data</mat-label>
+      <input type="date" matInput value="dateField" formControlName="date">
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="m-1">
+      <mat-label>Categorias</mat-label>
+      <mat-select disableRipple formControlName="select">
+        <mat-option value="1">Receita</mat-option>
+        <mat-option value="2">Despesas</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="m-1">
+      <mat-label>Título</mat-label>
+      <input type="text" matInput value="Título" formControlName="title">
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="m-1">
+      <mat-label>Valor</mat-label>
+      <input type="number" matInput value="R$" formControlName="value">
+    </mat-form-field>
+    <button type="submit" mat-raised-button class="btn m-1">Enviar</button>
+
+  </form>
+
+</div>
