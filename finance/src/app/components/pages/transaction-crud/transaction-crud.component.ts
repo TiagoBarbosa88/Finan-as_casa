@@ -9,7 +9,7 @@ import { TransactionModel } from '../transaction-model';
   styleUrls: ['./transaction-crud.component.css']
 })
 export class TransactionCrudComponent {
-  transaction?: TransactionModel[]
+  transactions?: TransactionModel[]
 
   form = new FormGroup({
     date: new FormControl("", Validators.required),
@@ -23,6 +23,12 @@ export class TransactionCrudComponent {
 
   ngOnInit(): void {
 
+  }
+
+  readAll(): void{
+    this.transactionService.read().subscribe((transactions) => {
+      this.transactions = transactions;
+    })
   }
 
   createTransaction(): void {
@@ -41,7 +47,10 @@ export class TransactionCrudComponent {
   updateTransactions(transactions: TransactionModel): void {
     this.transactionService.update(transactions).subscribe();
   }
-
-
-
+/*
+  deleteTransactions(transactions: TransactionModel): void{
+    this.transactionService.delete(transactions.id?).subscribe(() => {
+      this.readAll();
+    })
+  } */
 }

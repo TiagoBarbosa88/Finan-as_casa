@@ -44,11 +44,9 @@ export class TransactionService {
     return this.http.put(url, transactions)
   }
 
-  delete(transactions: TransactionModel | number): Observable<TransactionModel>{
-    const id = typeof transactions === 'number' ? transactions : transactions.id;
-    const url = `${this.baseUrl}/${id}`;
-    return this.http.delete<TransactionModel>(url);
+/*   delete(id: number): Observable<TransactionModel[]>{
+      return this.http.delete<TransactionModel[]>(`${this.baseUrl}/${id}`;);
   }
 
-
+ */
 }
